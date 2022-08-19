@@ -60,20 +60,20 @@ img{
     background-blend-mode:darken;
     
 }
-h2{
+h1,h2{
     margin: 20px auto 8px;
 }
 
 span{
     text-shadow: 0 0px 5px rgb(169, 131, 131);
-    animation: color 10s infinite ease-in-out;
+    animation: color 6s infinite ease-in-out;
 }
 @keyframes color {
     0%{
         color: #18dfe3;
     }
     50%{
-        color:#a52ba7
+        color:#936767
     }
     100%{
         color: #00DBDE;
