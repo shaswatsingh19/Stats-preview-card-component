@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: start 1s;
+}
+@keyframes start {
+    0%{
+        transform: scale(.88);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.container{
+
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 90%;
+    margin: 80px auto;
+    border-radius: 10px;
+    transition: all .81s;
+}
+
+.container:hover{
+    box-shadow:  0 0 50px #23200d;
+}
+img{
+    
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    
+
+}
+.image{
+    width: 100%;
+    height: 400px;
+    order: 1;
+    border-radius: 10px 10px 0 0;
+    background: url('images/image-header-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(252,0,255,.46);
+    background-blend-mode: darken;
+}
+
+.text{
+    order: 2;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient( 135deg, #a52ba7 10%, #18dfe3 100%);
+    border-radius: 0 0 10px 10px;
+    background-color:  #a52ba7 ;
+    background-blend-mode:darken;
+    
+}
+h2{
+    margin: 20px auto 8px;
+}
+
+span{
+    text-shadow: 0 0px 5px rgb(169, 131, 131);
+    animation: color 10s infinite ease-in-out;
+}
+@keyframes color {
+    0%{
+        color: #18dfe3;
+    }
+    50%{
+        color:#a52ba7
+    }
+    100%{
+        color: #00DBDE;
+    }
+    
+}
+
+
+@media screen and (min-width:750px) {
+    
+    .container{
+        flex-direction: row;
+    }
+    .image{
+        width: 45%;
+        order: 2;
+        border-radius: 0 10px 10px 0;
+        background: url('images/image-header-desktop.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 430px;
+        
+        background-color: rgba(252,0,255,.46);
+        background-blend-mode: darken;
+
+    }
+    .text{
+        width: 55%;
+
+        padding: 10px 30px 20px 40px;
+        border-radius: 10px 0 0 10px;
+    }
+    
+}
